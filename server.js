@@ -1,17 +1,6 @@
-const express = require('express');
+import app from './app';
+import config from './config';
 
-const app = express();
+const { PORT } = 5000;
 
-app.get('/api/customers', (req,res) => {
-  const customers = [
-    {id: 1, firstName: 'John', lastName: 'Doe'},
-    {id: 2, firstName: 'Edna', lastName: 'Swindle'},
-    {id: 3, firstName: 'Lati', lastName: 'Uncertain'}
-  ];
-
-  res.json(customers);
-});
-
-const port = 5000;
-
-app.listen(port, () => `Server started on port ${port}`);
+app.listen(PORT, () => console.log(`Server started on PORT ${PORT}`));

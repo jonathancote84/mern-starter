@@ -1,7 +1,7 @@
 {
-  "name": "reactexpress",
+  "name": "mern-starter",
   "version": "1.0.0",
-  "description": "Boilerplate for React and Express",
+  "description": "Boilerplate for React and Express server and Mern",
   "main": "server.js",
   "scripts": {
     "client-install": "cd client && npm install",
@@ -13,8 +13,19 @@
   "author": "Jonathan Cote",
   "license": "MIT",
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
     "concurrently": "^5.2.0",
-    "express": "^4.17.1"
+    "config": "^3.3.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.19"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
