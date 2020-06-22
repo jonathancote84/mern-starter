@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
 });
 
 // @route  POST api/items
-// @desc   Create a Post 
+// @desc   Create an Item 
 // @access Public
 router.post('/', (req, res) => {
   const newItem = new Item({
